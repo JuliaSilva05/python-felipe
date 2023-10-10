@@ -1,0 +1,13 @@
+from math import sqrt
+from sympy import integrate
+from matplotlib import pyplot
+def funcao():
+    listay = [1/(sqrt(y-2)) for y in range(3,6+1)]
+    listax = [x for x in range(3,6+1)]
+    pyplot.plot(listax,listay)
+    pyplot.show()
+
+def area():
+    integrate(x,funcao())
+
+funcao()
